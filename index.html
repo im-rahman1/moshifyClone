@@ -8,19 +8,30 @@
     <link rel="stylesheet" href="css\normalize.css" />
     <link rel="stylesheet" href="css\styles.css" />
   </head>
-  <body style="padding: 5rem">
-    <div class="callout callout--primary">
-      <div class="grid grid--1x2">
-        <div class="callout__content">
-          <h2 class="callout__heading">Ready to Get Started?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            neque animi voluptates facere odit, veritatis dolores harum error
-            vero minus.
-          </p>
-        </div>
-        <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+  <body style="background-color: rgb(194, 194, 194)">
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">item 1</h2>
+        <svg class="icon icon-white collapsible__chevron">
+          <use xlink:href="images\sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, dolor?
       </div>
     </div>
+
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">item 1</h2>
+        <svg class="icon icon-white collapsible__chevron">
+          <use xlink:href="images\sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, dolor?
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
