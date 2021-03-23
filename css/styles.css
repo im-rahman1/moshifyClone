@@ -512,7 +512,7 @@ a {
 .testimonial__image > .icon-container {
   position: absolute;
   top: 3rem;
-  right: -32px;
+  right: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -607,6 +607,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
