@@ -202,7 +202,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -293,6 +293,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -501,8 +502,23 @@ a {
   padding: 3rem;
 }
 
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 90%;
+}
+
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
+}
+
+.testimonial .media__title,
+.media__body {
+  font-size: 2.5rem;
+}
+
+.testimonial .media__body {
+  margin-left: 1.5rem;
 }
 
 .testimonial__image > img {
@@ -512,7 +528,7 @@ a {
 .testimonial__image > .icon-container {
   position: absolute;
   top: 3rem;
-  right: -30px;
+  right: -32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -601,7 +617,7 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 4rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -627,12 +643,12 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 
 .container {
@@ -708,7 +724,7 @@ a {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
-  margin: 2rem 5rem;
+  margin: 4rem 0;
 }
 
 .hero__image {
@@ -735,14 +751,16 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 768px) {
@@ -808,6 +826,7 @@ a {
 /* footer */
 .footer {
   background: #232323;
+  padding: 10rem 2rem 5rem 2rem;
 }
 
 .footer a {
@@ -817,6 +836,11 @@ a {
 
 .footer a:hover {
   color: #fff;
+}
+
+.footer__sections {
+  gap: 4rem;
+  margin: 10rem 5rem;
 }
 
 .footer__section {
@@ -843,6 +867,10 @@ a {
   font-size: 2.1rem;
   color: #fff;
   opacity: 0.3;
+}
+
+.footer .container {
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -878,4 +906,10 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+.callout-signup {
+  transform: translateY(8rem);
+  max-width: 1140px;
+  margin: auto;
 }
